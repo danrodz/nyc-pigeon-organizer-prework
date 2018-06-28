@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
           :lives => []
         }
       end
-      pigeon_list[name.to_sym][attributes] << array_key.to_s
+      pigeon_list[name.to_sym][attributes] << array_key
     end
   end
   pigeon_list
