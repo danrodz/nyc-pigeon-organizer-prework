@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
     values.each do |array_key, name|
       if !pigeon_list.has_key?(name)
         pigeon_list[name] = {
-          color: [],
-          gender: [],
-          lives: []
+          :color => [],
+          :gender => [],
+          :lives => []
         }
       end
       pigeon_list[name][attributes] << array_key.to_s
