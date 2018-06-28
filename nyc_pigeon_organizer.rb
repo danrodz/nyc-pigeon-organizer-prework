@@ -1,7 +1,7 @@
-def nyc_pigeon_organizer(pigeo_data)
+def nyc_pigeon_organizer(pigeon_data)
   # write your code here!
   pigeon_list = {}
-  data.each do |keys, values|
+  pigeon_datadata.each do |keys, values|
     keys.each do |key, value|
       value.each do |name|
         if !pigeon_list.has_key?(name)
