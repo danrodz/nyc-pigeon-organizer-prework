@@ -5,13 +5,12 @@ def nyc_pigeon_organizer(data)
     values.each do |array_key, name|
       if !pigeon_list.has_key?(name)
         pigeon_list[name] = {
-          color: [array_key],
+          color: [],
           gender: [],
           lives: []
         }
-      else
-        pigeon_list[name][attributes] << array_key
       end
+      pigeon_list[name][attributes] << array_key.to_s
     end
   end
   pigeon_list
