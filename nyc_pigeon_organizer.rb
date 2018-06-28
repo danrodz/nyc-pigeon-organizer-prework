@@ -3,14 +3,14 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.each do |attributes, values|
     values.each do |array_key, name|
-      if !pigeon_list.has_key?(name.to_sym)
-        pigeon_list[name.to_sym] = {
+      if !pigeon_list.has_key?(name)
+        pigeon_list[name] = {
           :color => [],
           :gender => [],
           :lives => []
         }
       end
-      pigeon_list[name.to_sym][attributes] << array_key
+      pigeon_list[name][attributes] << values
     end
   end
   pigeon_list
