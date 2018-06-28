@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
           lives: []
         }
       else
-        pigeon_list[name][]
+        pigeon_list[name][attributes] << array_key
       end
     end
   end
